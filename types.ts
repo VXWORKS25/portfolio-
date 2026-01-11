@@ -6,6 +6,7 @@ export enum SectionId {
   ECOSYSTEM = 'ecosystem',
   SERVICES = 'services',
   SECURITY = 'security',
+  LANDING_PAGE = 'landing_page',
   ROADMAP = 'roadmap',
   CHAT = 'chat'
 }

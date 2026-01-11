@@ -1,7 +1,7 @@
 import { SpecSection, SectionId } from './types';
 
 export const SYSTEM_NAME = "TITAN OS";
-export const SYSTEM_VERSION = "Architectural Preview v3.0";
+export const SYSTEM_VERSION = "Architectural Preview v3.3";
 
 export const SPEC_DATA: Record<string, SpecSection> = {
   [SectionId.VISION]: {
@@ -151,6 +151,49 @@ export const SPEC_DATA: Record<string, SpecSection> = {
       }
     ]
   },
+  [SectionId.LANDING_PAGE]: {
+    id: SectionId.LANDING_PAGE,
+    title: "Web Portal & Ignition Strategy",
+    subtitle: "Kinetic UI & Telemetry Architecture",
+    content: [
+      {
+        heading: "Visual Theme: 'Midnight Foundry'",
+        body: [
+          "The web interface extends the OS aesthetic into a cinematic marketing experience. The palette deepens to 'Abyssal Gray' (#050505) to allow the 'Ember Orange' (#f97316) to burn with greater intensity.",
+          "Surfaces are no longer just matte; they possess depth, reflectivity, and sub-surface scattering, creating a 'luxury dark' environment."
+        ]
+      },
+      {
+        heading: "The Kinetic 3D 'Ignite' Button",
+        body: [
+          "Primary actions are represented by 'Kinetic Objects'. The 'Ignite' (Download) button is a volumetric 3D element with simulated physical weight.",
+          "It features chamfered edges, dynamic lighting that follows the cursor, and a tactile 'depression' animation on click, simulating a high-end mechanical switch."
+        ],
+        bullets: [
+          "Primary: 'Ember Orange' 3D button. Floating state with drop shadow. Mechanical press action.",
+          "Secondary: 'Titanium Gray' 3D buttons for Documentation and GitHub links, receding into the background."
+        ]
+      },
+      {
+        heading: "Database Integration: 'The Beacon'",
+        body: [
+          "The landing page is not passive; it connects to the 'Beacon' online database cluster. This secure layer manages telemetry and future user services.",
+          "It tracks 'Ignition Events' (install attempts) anonymously to optimize the funnel, storing platform data and version preferences."
+        ],
+        bullets: [
+          "Architecture: Serverless SQL integration for instant scalability.",
+          "Resilience: Failsafe design ensures downloads continue even if the database is unreachable."
+        ]
+      },
+      {
+        heading: "Ignition Flow with Verification",
+        body: [
+          "Upon clicking 'Ignite', the Beacon logs the event while the frontend initiates the 'Pre-Flight Modal'.",
+          "The system performs a handshake with GitHub Releases to verify SHA-256 checksums before serving the file, bridging the gap between open-source trust and enterprise analytics."
+        ]
+      }
+    ]
+  },
   [SectionId.ROADMAP]: {
     id: SectionId.ROADMAP,
     title: "Evolution Roadmap",
@@ -179,11 +222,10 @@ Titan OS is a luxury, industrial-minimalist operating system defined by:
 1. Visuals: "Matte Gray" surfaces with "Ember Orange" glowing accents.
 2. Philosophy: "Invisible Strength" - simple, powerful, distraction-free.
 3. Architecture: "Monolith" kernel with "Kinetic" rendering.
-4. Install: Single-click "Ignition".
-5. Ecosystem: "The Vault" unified store.
+4. Web Strategy: "Midnight Foundry" theme with volumetric 3D buttons and "Beacon" database integration.
 
-Your goal is to answer detailed questions about the OS.
-Tone: Sophisticated, concise, confident, and premium. Use metaphors related to high-end automotive or architectural design.
-When asked about UI, describe the "weight" of interactions and the "warmth" of the lighting.
-When asked about installation, emphasize the simplicity and speed.
+Your goal is to answer detailed questions about the OS and its web strategy.
+Tone: Sophisticated, concise, confident, and premium.
+When asked about the website, describe the "Kinetic 3D" buttons that feel like physical switches.
+When asked about data, explain the "Beacon" database node which tracks adoption while respecting privacy.
 `;
